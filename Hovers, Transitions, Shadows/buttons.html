@@ -7,7 +7,18 @@
         width:105px;
         border-radius: 2px;
         cursor:pointer;
+        
+        transition: opacity 0.5s;
     }
+
+    .youtube-button:hover{
+        opacity: 0.8;
+    }
+
+    .youtube-button:active{
+        opacity: 0.4;
+    }
+
 
     .join-button{
         background-color: white;
@@ -20,6 +31,17 @@
         width:62px;
         cursor:pointer;
         margin-left: 8px;
+
+        transition: background-color 1s, color 1s
+    }
+    
+    .join-button:hover{
+        background-color: rgb(41, 118, 211);
+        color:white;
+    }
+
+    .join-button:active{
+        opacity: 0.7;
     }
 
     .tweet-button{
@@ -33,10 +55,17 @@
         font-weight: bold;
         cursor: pointer;
         margin-left: 8px;
+
+        transition: box-shadow 0.15s, color 0.15s;
+    }
+
+    .tweet-button:hover{
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
     }
 </style>
 
-<h1>Buttons</h1>
+<h1>Hovers, Transitions, Shadows</h1>
+<h2> These are the same buttons from the buttons folder</h2>
 <button class="youtube-button">Subscribe</button>
 <button class="join-button">Join</button>
 <button class="tweet-button">Tweet</button>
